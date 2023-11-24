@@ -1,29 +1,217 @@
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+}
 
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
 
-html,body {
-    height: 100%;
+html, body {
+  height: 100%;
+  margin: 0 auto;
 }
 
 body {
-    font-size: 16px;
-    line-height: 1.42;
-    -webkit-font-smoothing: antialiased;
-    position: relative;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
 }
 
 .container {
-    margin: 0 auto;
-    position: relative;
-    max-width: 1100px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1100px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  background-color: rgb(97, 196, 217);
+  min-width: 1100px;
+}
+
+.hero__content {
+  max-width: 45%;
+  color: #FFF;
+}
+
+.hero__title {
+  padding-bottom: 25px;
+}
+
+.hero__text {
+  padding-bottom: 50px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hero__button {
+  padding-bottom: 100px;
+  max-width: 156px;
+}
+
+.hero__chars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 0 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chars__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 166px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero__complete {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.hero__tribe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+  max-width: 942px;
+  padding-top: 25px;
+  z-index: 5;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 41px;
+}
+
+.nav__item {
+  min-width: 48px;
+  min-height: 20px;
+}
+
+.width150 {
+  min-width: 150px;
+}
+
+.header__phone {
+  padding-left: 41px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 0 27px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 100;
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav__item {
+  display: block;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: rgb(54, 90, 73);
+  padding: 18px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  -webkit-transition: background-color 0.9s;
+  transition: background-color 0.9s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button--big {
+  padding: 21px 41px;
+}
+
+.button--red {
+  background-color: rgb(245, 23, 14);
+  color: #fff;
 }

@@ -1,0 +1,19 @@
+.nav__list {
+    display: flex;    
+    list-style: none;
+    gap: 0 27px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 100;
+    font-family: "Alegreya Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;    
+}

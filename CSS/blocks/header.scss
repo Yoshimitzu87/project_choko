@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;  
+    max-width: 942px;
+    padding-top: 25px;  
+    z-index: 5;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    padding-left: 41px;
+}
+
+.nav__item {
+    min-width: 48px;
+    min-height: 20px;
+}
+
+.width150 {
+    min-width: 150px;
+}
+
+.header__phone {
+    padding-left: 41px;
+}

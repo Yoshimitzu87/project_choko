@@ -1,0 +1,30 @@
+.button {
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#fff;
+  color: rgba(54, 90, 73, 1);  
+  padding: 18px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px; 
+  transition: background-color .9s; 
+  text-transform: uppercase;
+}
+
+
+.button:hover { 
+  
+  cursor: pointer;  
+}
+
+.button--big {
+  padding: 21px 41px;
+}
+
+.button--red {
+  background-color:rgba(245, 23, 14, 1);
+  color: #fff;
+}
