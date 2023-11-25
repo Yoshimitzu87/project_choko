@@ -1,6 +1,7 @@
 .hero {
     background-color: $blue;
-    min-width: 1100px;
+    padding-left: 80px;
+    margin: 0 auto;
 }
 
 .hero__content {
@@ -9,18 +10,18 @@
 }
 
 .hero__title {
-    padding-bottom: 25px;
+    padding-bottom: 17px;
 }
 
 .hero__text {
-    padding-bottom: 50px;
+    padding-bottom: 32px;
     font-size: 21px;
     font-weight: 400;
     line-height: 25px;
 }
 
 .hero__button {
-    padding-bottom: 100px;
+    padding-bottom: 64px;
     max-width: 156px;
 }
 
@@ -29,6 +30,7 @@
     list-style: none;
     gap: 0 8px;
     justify-content: space-between;
+    
 }
 
 .chars__item {
@@ -55,24 +57,23 @@
 
 
 
-
-
-
-
-
-
-
-
 .hero__complete {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0;  
+    bottom: -45px; 
     z-index: 2;
+    
 }
 
-.hero__tribe {
+.hero__tribeleaf {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+.hero__leaf-img {
+    position: absolute;
+    left: -53px;
+    bottom: -75px;
 }
