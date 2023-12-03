@@ -1,17 +1,20 @@
 .header {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 90px;  
+    margin-bottom: 90px;
     max-width: 942px;
-    padding-top: 25px;  
-    z-index: 5;
+    padding-top: 25px;
+    z-index: 10;
 }
 
 .header__nav {
     display: flex;
     align-items: center;
     padding-left: 41px;
+    z-index: 10;
 }
 
 .nav__item {
@@ -20,9 +23,11 @@
 }
 
 .width150 {
-    min-width: 150px;
+    min-width: 124px;
 }
 
 .header__phone {
-    padding-left: 41px;
+    max-width: 124px;
+    min-height: 39px;
+    padding-top: 5px;
 }

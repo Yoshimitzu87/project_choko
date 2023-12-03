@@ -1,0 +1,96 @@
+.why {
+    padding-top: 102px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.why-left-side__tribe {
+    position: absolute;
+    left: 0;
+    top: 174px;
+}
+
+.why-left-side__rasp {
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+
+.why__content {
+    max-width: 95%;
+    color: #000;
+    margin: 0 auto;
+}
+
+.why__title {
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why__text {
+    padding-bottom: 32px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    max-width: 436px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.why__explain {
+    display: flex;
+    gap: 0 50px;
+    padding-top: 50px;
+}
+
+.explain__item {
+    display: flex;
+    min-width: 276px;
+    min-height: 276px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.explain__item:nth-child(n)::after {
+    content: url(../img/features/feat_even.png);
+    position: absolute;
+    top: 55px;
+    right: -60px;
+}
+
+.explain__item:last-child::after {
+    content: none;
+}
+
+.explain__title {
+    padding-top: 32px;
+}
+
+
+.explain-img__wrapper {
+    min-width: 127px;
+    min-height: 127px;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.explain__img {
+    display: block;
+    max-width: 100%;
+}
+
+.explain__text {
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+}

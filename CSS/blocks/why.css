@@ -1,0 +1,33 @@
+.why {
+  padding-left: 80px;
+  margin: 0 auto;
+}
+
+.why__content {
+  max-width: 45%;
+  color: #FFF;
+}
+
+.why__title {
+  padding-bottom: 17px;
+}
+
+.why__text {
+  padding-bottom: 32px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.why__explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.explain__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 276px;
+}

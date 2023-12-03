@@ -4,9 +4,13 @@
     margin: 0 auto;
 }
 
+
+
 .hero__content {
-   max-width: 45%;
-   color: #FFF;
+    max-width: 45%;
+    color: #FFF;
+    z-index: 555;
+    text-align: start;
 }
 
 .hero__title {
@@ -30,7 +34,7 @@
     list-style: none;
     gap: 0 8px;
     justify-content: space-between;
-    
+
 }
 
 .chars__item {
@@ -59,17 +63,19 @@
 
 .hero__complete {
     position: absolute;
-    right: 0;  
-    bottom: -45px; 
+    right: -20px;
+    bottom: -70px;
     z-index: 2;
-    
+
 }
 
 .hero__tribeleaf {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -40px;
+    bottom: -25px;
     z-index: 1;
+    min-height: 650px;
+    display: block;
 }
 
 .hero__leaf-img {

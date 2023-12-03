@@ -1,0 +1,11 @@
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}

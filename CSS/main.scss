@@ -1,5 +1,7 @@
 //colors
 $blue: rgba(97, 196, 217, 1);
+$graybckgrnd: #F8FAF9;
+$greenborder:rgba(54, 90, 73, 1);
 
 //headers 
 h1 {
@@ -11,12 +13,21 @@ h1 {
 }
 
 h2 {
-   font-size: 48px;
+   font-size: 36px;
    font-weight: 700;
-   line-height: 58px;
+   line-height: 43px;
    margin-block-end: 0px;
    margin-block-start: 0px;
 }
+
+h3 {
+   font-size: 27px;
+   font-weight: 700;
+   line-height: 32px;
+   margin-block-end: 0px;
+   margin-block-start: 0px;
+}
+
 
 
 //list
@@ -24,6 +35,7 @@ ul {
    padding-inline-start: 0px;
    margin-block-start: 0;
    margin-block-end: 0;
+   list-style: none;
 }
 
 
@@ -35,4 +47,8 @@ ul {
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
+@import "blocks/why.scss";
 @import "_misc/button.scss";
+@import "blocks/feedback.scss";
+@import "_misc/title.scss";
+@import "_misc/form.scss";
