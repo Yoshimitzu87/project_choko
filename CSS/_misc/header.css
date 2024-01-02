@@ -1,0 +1,43 @@
+.header {
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: rem(90px);
+  max-width: rem(942px);
+  padding-top: rem(25px);
+  z-index: 5;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: rem(41px);
+  z-index: 10;
+}
+
+.nav__item {
+  min-width: rem(48px);
+  min-height: rem(20px);
+}
+
+.width150 {
+  min-width: rem(124px);
+}
+
+.header__phone {
+  max-width: rem(124px);
+  min-height: rem(39px);
+  padding-top: rem(5px);
+}

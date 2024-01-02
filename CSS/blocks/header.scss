@@ -7,8 +7,15 @@
     margin-bottom: 90px;
     max-width: 942px;
     padding-top: 25px;
-    z-index: 10;
+    z-index: 5;
+
+    @include tablets {
+    display: none;
 }
+    
+}
+
+
 
 .header__nav {
     display: flex;

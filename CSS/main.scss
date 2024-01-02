@@ -2,6 +2,11 @@
 $blue: rgba(97, 196, 217, 1);
 $graybckgrnd: #F8FAF9;
 $greenborder:rgba(54, 90, 73, 1);
+$greentext: rgba(73, 120, 112, 1);
+
+//breakpoints
+$tablets: 768px;
+$phones: 460px;
 
 //headers 
 h1 {
@@ -52,3 +57,4 @@ ul {
 @import "blocks/feedback.scss";
 @import "_misc/title.scss";
 @import "_misc/form.scss";
+@import "_misc/media.scss";

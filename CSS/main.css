@@ -38,6 +38,10 @@ ul {
   list-style: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -65,7 +69,7 @@ body {
   margin: 0 auto;
   position: relative;
   max-width: 940px;
-  width: 95%;
+  width: 99%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,9 +98,9 @@ body {
 
 .hero__content {
   max-width: 45%;
-  color: #FFF;
-  z-index: 555;
+  color: #fff;
   text-align: start;
+  z-index: 555;
 }
 
 .hero__title {
@@ -173,7 +177,7 @@ body {
   margin-bottom: 90px;
   max-width: 942px;
   padding-top: 25px;
-  z-index: 10;
+  z-index: 5;
 }
 
 .header__nav {
@@ -534,31 +538,216 @@ body {
 }
 
 .order {
-  background: rgb(97, 196, 217);
+  background: url(../img/form/bckgrnd.png);
+  padding-top: 62px;
+}
+
+.title {
+  padding-bottom: 83px;
+  color: rgb(73, 120, 112);
 }
 
 .form {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 10px;
+  width: 100%;
+  border: none;
+  margin: none;
 }
 
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 25px;
+  max-width: 99%;
+  gap: 0 10px;
+}
+.form__row:last-child {
+  padding-bottom: 0;
 }
 
 .form__block {
+  border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
+  max-width: 100%;
+  text-align: left;
 }
 .form__block:last-child {
-  margin-right: 0;
+  padding-right: 0px;
 }
 
 .form__input {
-  width: 100%;
+  width: 99%;
   min-height: 58px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.form__left {
+  max-width: 462px;
+}
+
+.form__block-title {
+  color: rgb(73, 120, 112);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.form__right {
+  min-width: 50%;
+  text-align: start;
+}
+
+.form__textarea-title {
+  color: rgb(73, 120, 112);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.form__textarea {
+  min-width: 445px;
+  min-height: 150px;
+  resize: none;
+  outline: none;
+  text-align: start;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.form__checkbox-wraper {
+  margin-top: 50px;
+}
+
+.checkbox__padding {
+  padding-top: 50px;
+}
+
+.form__right {
+  color: rgb(73, 120, 112);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.radio__row {
+  color: rgb(73, 120, 112);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 22px;
+}
+
+.form__radio {
+  padding-left: 5px;
+}
+
+.radio__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-transition: 0.6s all linear;
+  transition: 0.6s all linear;
+  outline: none;
+  background-color: #fff;
+}
+
+.radio__input:checked {
+  border: 6px solid #fff;
+  background-color: rgb(54, 90, 73);
+}
+
+.radio__label {
+  padding-left: 5px;
+}
+
+.form__radio-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__checkbox-hide {
+  display: none;
+  background-color: #fff;
+  color: rgb(54, 90, 73);
+  opacity: 0;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__checkbox-visible {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  opacity: 1;
+  border-radius: 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__checkbox-hide:checked ~ .form__checkbox-visible::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  margin: auto;
+  width: 10px;
+  height: 5px;
+  border-radius: rem(1px);
+  border-left: rem(4px) solid rgb(54, 90, 73);
+  border-bottom: rem(4px) solid rgb(54, 90, 73);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.form__checkbox-wrapper {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button__container {
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=main.css.map */
