@@ -23,6 +23,9 @@
                     <header class="header">
                         <div class="logo"><a href="index.html" class="logo__link"><img src="../img/logos/logo1.png"
                                     alt="chocco" class="logo__pic"></a></div>
+                        <svg class="hamburger-icon">
+                            <use xlink:href="./img/sprite.svg#hamburger__menu"></use>
+                        </svg>
                         <div class="header__nav">
                             <nav class="nav">
                                 <ul class="nav__list">
@@ -155,22 +158,35 @@
                     <form class="form">
                         <div class="form__left">
                             <div class="form__row two__pieces"><label for="" class="form__block">
-                                    <div class="form__block-title">Имя</div><input type="text" class="form__input">
-                                </label><label for="" class="form__block">
-                                    <div class="form__block-title">Телефон</div><input type="text" class="form__input">
-                                </label></div>
+                                    <div class="form__block-title">Имя</div>
+                                    <input type="text" class="form__input two__pieces">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__block-title">Телефон</div>
+                                    <input type="text" class="form__input two__pieces">
+                                </label>
+                            </div>
                             <div class="form__row"><label for="" class="form__block">
                                     <div class="form__block-title">Улица</div><input type="text" class="form__input">
                                 </label></div>
-                            <div class="form__row four__pieces"><label for="" class="form__block">
-                                    <div class="form__block-title">Дом</div><input type="text" class="form__input">
-                                </label><label for="" class="form__block">
-                                    <div class="form__block-title">Корпус</div><input type="text" class="form__input">
-                                </label><label for="" class="form__block">
-                                    <div class="form__block-title">Квартира</div><input type="text" class="form__input">
-                                </label><label for="" class="form__block">
-                                    <div class="form__block-title">Этаж</div><input type="text" class="form__input">
-                                </label></div>
+                            <div class="form__row">
+                                <label for="" class="form__block">
+                                    <div class="form__block-title">Дом</div>
+                                    <input type="text" class="form__input four__pieces">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__block-title ">Корпус</div>
+                                    <input type="text" class="form__input four__pieces">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__block-title ">Квартира</div>
+                                    <input type="text" class="form__input four__pieces">
+                                </label>
+                                <label for="" class="form__block four__pieces">
+                                    <div class="form__block-title">Этаж</div>
+                                    <input type="text" class="form__input four__pieces">
+                                </label>
+                            </div>
                         </div>
                         <div class="form__right"><label for="" class="form__textarea-label">
                                 <div class="form__textarea-title">Комментарий <textarea type="text" name="Комментарий"
@@ -188,11 +204,13 @@
                             </form>
                             <div class="form__checkbox-wrapper"><label class="checkbox__label"><input type="checkbox"
                                         class="form__checkbox-hide" />
-                                    <div class="form__checkbox-visible"></div><span
-                                        class="form__checkbox-visible-text">Не перезванивать</span>
+                                    <div class="form__checkbox-visible"></div>
+                                    <span class="form__checkbox-visible-text">Не перезванивать</span>
                                 </label></div>
-                            <div class="button__container"><button type="submit"
-                                    class="button">Отправить</button><button type="reset">Очистить</button></div>
+                            <div class="button__container">
+                                <button type="submit" class="button">Отправить</button>
+                                <button type="reset" class="button__reset">Очистить</button>
+                            </div>
                         </div>
                 </div>
                 </form>

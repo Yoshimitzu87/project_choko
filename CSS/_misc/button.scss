@@ -14,9 +14,19 @@
   text-transform: uppercase;
 }
 
+.button__reset {
+  border-width: 0px;
+  background-color: transparent;
+  color: #2E4E3F;
+  cursor: pointer;
+}
+
+
+
 
 .button:hover {
-
+  background-color: #2E4E3F;
+  color: #FFF;
   cursor: pointer;
 }
 

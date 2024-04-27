@@ -6,7 +6,7 @@ $greentext: rgba(73, 120, 112, 1);
 
 //breakpoints
 $tablets: 768px;
-$phones: 460px;
+$phones: 480px;
 
 //headers 
 h1 {
@@ -15,6 +15,7 @@ h1 {
    line-height: 58px;
    margin-block-end: 0px;
    margin-block-start: 0px;
+   margin: 0;
 }
 
 h2 {
@@ -43,12 +44,15 @@ ul {
    list-style: none;
 }
 
+//mixin
+@import "_misc/media.scss";
 
 //layout
 @import "_misc/layout.scss";
 
 
 //blocks
+
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -57,4 +61,3 @@ ul {
 @import "blocks/feedback.scss";
 @import "_misc/title.scss";
 @import "_misc/form.scss";
-@import "_misc/media.scss";

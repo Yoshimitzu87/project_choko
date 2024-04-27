@@ -1,56 +1,119 @@
 .hero {
     background-color: $blue;
-    padding-left: 80px;
+    padding-left: rem(80px);
     margin: 0 auto;
+    position: relative;
+
+    @include tablets {
+        padding-left: 0;
+    }
+
+    @include phones {
+        padding-left: 0;
+    }
 }
 
+.hamburger-icon {
+    width: 26px;
+    height: 24px;
+    fill: #FFF;
+    display: none;
+    position: absolute;
 
+    @include tablets {
+        display: flex;
+        left: 700px;
+    }
+}
 
 .hero__content {
     max-width: 45%;
-    color: #fff;
+    color: #FFF;
     text-align: start;
     z-index: 555;
+
+    @include tablets {
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        max-width: 90%;
+        margin-top: rem(462px);
+    }
+
+    @include phones {
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        max-width: 90%;
+    }
 }
 
 .hero__title {
-    padding-bottom: 17px;
+    padding-bottom: rem(17px);
+    margin: 0 0;
+
+    @include tablets {
+        max-width: rem(665px);
+        font-size: 48px;
+        max-height: rem(116px);
+    }
 }
 
 .hero__text {
-    padding-bottom: 32px;
-    font-size: 21px;
+    padding-bottom: rem(32px);
+    font-size: rem(21px);
     font-weight: 400;
-    line-height: 25px;
+    line-height: rem(25px);
+
+    @include tablets {
+        max-width: rem(371px);
+        font-size: 21px;
+        max-height: rem(51px);
+        margin: 0 auto;
+    }
 }
 
 .hero__button {
-    padding-bottom: 64px;
-    max-width: 156px;
+    padding-bottom: rem(64px);
+    max-width: rem(156px);
+
+    @include tablets {
+        margin: 0 auto;
+    }
+
+    @include phones {
+        margin: 0 auto;
+    }
 }
 
 .hero__chars {
     display: flex;
     list-style: none;
-    gap: 0 8px;
+    gap: 0 rem(8px);
     justify-content: space-between;
+    padding-inline-start: 0px;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 
 }
 
 .chars__item {
     display: flex;
-    min-width: 166px;
+    min-width: rem(166px);
     align-items: flex-start;
 }
 
 
-
-
-
-
-
-
-
+.chars__text {
+    max-width: rem(100px);
+    color: #fff;
+}
 
 
 
@@ -62,24 +125,85 @@
 
 
 .hero__complete {
+
+    @include tablets {
+        // max-width: rem(344px);
+        // max-height: rem(348px);
+        width: 348px;
+        height: 348px;
+    }
+
+    @include phones {
+
+        max-width: rem(344px);
+        max-height: rem(348px);
+    }
+}
+
+
+
+
+
+.hero__completepicture {
     position: absolute;
-    right: -20px;
-    bottom: -70px;
+    right: rem(-20px);
+    bottom: rem(-225px);
     z-index: 2;
+
+    @include tablets {
+        right: rem(200px);
+        bottom: rem(375px);
+        //  max-width: rem(344px);
+        // max-height: rem(348px);
+    }
+
+    @include phones {
+        right: rem(-20px);
+        bottom: rem(346px);
+        max-width: rem(344px);
+        max-height: rem(348px);
+    }
 
 }
 
 .hero__tribeleaf {
     position: absolute;
-    right: -40px;
-    bottom: -25px;
+    right: rem(-40px);
+    bottom: rem(-25px);
     z-index: 1;
-    min-height: 650px;
+
     display: block;
+
+    @include tablets {
+        right: rem(-20px);
+        bottom: rem(200px);
+        max-width: rem(512px);
+        max-height: rem(648px);
+    }
+
+    @include phones {
+        right: rem(-20px);
+        bottom: rem(366px);
+        max-width: rem(344px);
+        max-height: rem(348px);
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .hero__leaf-img {
     position: absolute;
-    left: -53px;
-    bottom: -75px;
+    left: rem(-53px);
+    bottom: rem(-225px);
+
+    @include tablets {
+        right: rem(-20px);
+        bottom: rem(-70px);
+        max-width: rem(344px);
+        max-height: rem(348px);
+    }
+
+    @include phones {
+        display: none;
+    }
 }
