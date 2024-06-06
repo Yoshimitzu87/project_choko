@@ -3,6 +3,7 @@
     padding-left: rem(80px);
     margin: 0 auto;
     position: relative;
+    height: 650px;
 
     @include tablets {
         padding-left: 0;
@@ -13,21 +14,14 @@
     }
 }
 
-.hamburger-icon {
-    width: 26px;
-    height: 24px;
-    fill: #FFF;
-    display: none;
-    position: absolute;
-
-    @include tablets {
-        display: flex;
-        left: 700px;
-    }
+.container {
+    height: 100%;
 }
 
+
 .hero__content {
-    max-width: 45%;
+    padding-top: rem(84px);
+    max-width: 38%;
     color: #FFF;
     text-align: start;
     z-index: 555;
@@ -37,7 +31,7 @@
         justify-content: center;
         align-self: center;
         max-width: 90%;
-        margin-top: rem(462px);
+        padding-top: 482px;
     }
 
     @include phones {
@@ -51,11 +45,20 @@
 .hero__title {
     padding-bottom: rem(17px);
     margin: 0 0;
+    line-height: rem(48px);
 
     @include tablets {
         max-width: rem(665px);
         font-size: 48px;
         max-height: rem(116px);
+        padding-bottom: rem(16px);
+        line-height: rem(44px);
+    }
+
+    @include phones {
+        font-size: 36px;
+        margin: 0 auto;
+        line-height: 40px;
     }
 }
 
@@ -125,12 +128,15 @@
 
 
 .hero__complete {
+    width: 100%;
+    height: 100%;
+
 
     @include tablets {
         // max-width: rem(344px);
         // max-height: rem(348px);
-        width: 348px;
-        height: 348px;
+        width: rem(348px);
+        height: rem(348px);
     }
 
     @include phones {
@@ -146,39 +152,73 @@
 
 .hero__completepicture {
     position: absolute;
+
     right: rem(-20px);
-    bottom: rem(-225px);
+    bottom: rem(181px);
     z-index: 2;
+    max-width: 54%;
+    max-height: 62%;
+
 
     @include tablets {
-        right: rem(200px);
-        bottom: rem(375px);
-        //  max-width: rem(344px);
-        // max-height: rem(348px);
+        right: rem(275px);
+        bottom: rem(320px);
+        // width: rem(344px);
+        //height: rem(348px);
+        max-width: 37%;
+        max-height: 38%;
     }
 
     @include phones {
-        right: rem(-20px);
+        right: rem(35px);
         bottom: rem(346px);
-        max-width: rem(344px);
-        max-height: rem(348px);
+        //width: rem(300px);
+        // height: rem(300px);
+        max-width: 90%;
+        max-height: 90%;
     }
 
 }
 
-.hero__tribeleaf {
+.hero__tribe {
+    max-width: 46.54%;
+    max-height: 100%;
     position: absolute;
     right: rem(-40px);
-    bottom: rem(-25px);
+    bottom: rem(0px);
+    display: flex;
+
+    @include tablets {
+        right: rem(-100px);
+        bottom: rem(200px);
+        max-width: 72.5%;
+        max-height: 73%;
+    }
+
+    @include phones {
+        right: rem(-20px);
+        bottom: rem(366px);
+        max-width: rem(344px);
+        max-height: rem(348px);
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+.hero__tribeleaf {
     z-index: 1;
+    width: 100%;
+    height: 100%;
 
     display: block;
 
     @include tablets {
         right: rem(-20px);
         bottom: rem(200px);
-        max-width: rem(512px);
-        max-height: rem(648px);
+        max-width: 80%;
+        max-height: 100%;
     }
 
     @include phones {

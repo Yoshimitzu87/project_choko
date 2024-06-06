@@ -7,19 +7,52 @@
     // margin-bottom: rem(90px);
     max-width: rem(942px);
     padding-top: rem(25px);
+    max-height: rem(88px);
     z-index: 5;
 
     @include tablets {
-        padding-left: rem(30px);
+        padding-left: rem(10px);
+        min-width: 98%;
+        min-height: rem(91px);
     }
 
     @include phones {
-        max-width: 98%;
+        padding-left: rem(10px);
+        min-width: 98%;
     }
 
 
 }
 
+.hamburger__wrapper {
+    @include tablets {
+        display: flex;
+        padding-right: 10px;
+    }
+
+    @include phones {
+        display: flex;
+        padding-right: 10px;
+    }
+}
+
+.hamburger-icon {
+    width: 26px;
+    height: 24px;
+    fill: #FFF;
+    display: none;
+
+
+    @include tablets {
+        display: flex;
+
+    }
+
+    @include phones {
+        display: flex;
+
+    }
+}
 
 
 .header__nav {
@@ -60,12 +93,4 @@
     }
 }
 
-.logo {
-    @include tablets {
-        padding-left: rem(30px);
-    }
-
-    @include phones {
-        display: none;
-    }
-}
+.logo {}

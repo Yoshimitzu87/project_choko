@@ -4,6 +4,7 @@
     margin-block-end: 0px;
     margin-block-start: 0px;
     position: relative;
+
 }
 
 .feedback__circle {
@@ -13,8 +14,13 @@
     border-radius: 50%;
     background-color: #ffffff;
     top: 25px;
-    left: 430px;
+    left: 45%;
     z-index: 1;
+
+
+    @include phones {
+        display: none;
+    }
 }
 
 .feedback__title {
@@ -22,6 +28,10 @@
     justify-content: center;
     padding-bottom: 32px;
     z-index: 2;
+
+    @include phones {
+        align-self: center;
+    }
 }
 
 .feedback__card {
@@ -32,33 +42,105 @@
     display: flex;
     position: relative;
     text-align: start;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include phones {
+        padding: 10px 0 10px 0;
+        flex-direction: column;
+        align-items: center;
+        min-width: rem(460px);
+        min-height: rem(418px);
+
+    }
 }
 
 .card__tribe {
     position: absolute;
     right: 0;
     top: 22px;
+
+    @include phones {
+        right: 50px;
+    }
 }
 
 .card-img__wrapper {
     max-width: 253px;
     max-height: 264px;
     display: flex;
+
+    @include tablets {
+        width: 18%;
+        height: 18%;
+        align-self: center;
+        padding-bottom: rem(32px);
+
+    }
+
+    @include phones {
+        z-index: 3;
+        max-width: 130px;
+        max-height: 130px;
+    }
 }
 
 .card__image {
     width: 100%;
+    height: 100%;
     display: block;
 }
 
 .card__content {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+
+    @include tablets {
+        max-height: rem(176px);
+        min-width: 88%;
+        align-self: center;
+
+    }
+
+    @include phones {
+        padding: 0 0 0 0;
+        max-width: rem(405px);
+        max-height: rem(244px);
+    }
 }
+
+.card__title__tab {
+    display: none;
+
+    @include tablets {
+
+        display: flex;
+        align-self: center;
+
+    }
+}
+
+
 
 .card__title {
     padding-top: 28px;
+
+
+    @include tablets {
+
+        display: none;
+        align-self: center;
+
+    }
+
+    @include phones {
+        align-self: center;
+    }
 }
 
 .card__text {
@@ -67,6 +149,11 @@
     line-height: 21px;
     padding-top: 12px;
     max-width: 463px;
+
+    @include tablets {
+        max-width: 100%;
+    }
+
 }
 
 .card__name {
@@ -74,6 +161,13 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+
+    @include tablets {
+        display: flex;
+        align-self: center;
+    }
+
+
 }
 
 .feedback__avatars {
@@ -104,6 +198,10 @@
     position: absolute;
     top: 510px;
     left: 0px;
+
+    @include phones {
+        top: 632px;
+    }
 }
 
 .feedback-left-side__berry {
@@ -111,4 +209,8 @@
     top: 510px;
     left: 0px;
     z-index: 1;
+
+    @include phones {
+        top: 632px;
+    }
 }

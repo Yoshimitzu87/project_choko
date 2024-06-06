@@ -23,9 +23,11 @@
                     <header class="header">
                         <div class="logo"><a href="index.html" class="logo__link"><img src="../img/logos/logo1.png"
                                     alt="chocco" class="logo__pic"></a></div>
-                        <svg class="hamburger-icon">
-                            <use xlink:href="./img/sprite.svg#hamburger__menu"></use>
-                        </svg>
+                        <div class="hamburger__wrapper">
+                            <svg class="hamburger-icon">
+                                <use xlink:href="./img/sprite.svg#hamburger__menu"></use>
+                            </svg>
+                        </div>
                         <div class="header__nav">
                             <nav class="nav">
                                 <ul class="nav__list">
@@ -42,7 +44,7 @@
                         </div><a href="tel:+78009039090" class="header__phone"><img src="img/phone.png" alt="phone"
                                 class="phone"></a>
                     </header>
-                    <div class="hero__completepicture"><img src="../img/patterns/comp.png" alt=""
+                    <div class="hero__completepicture"><img src="../img/patterns/comp.png" alt="hero__complete"
                             class="hero__complete"></div>
                     <div class="hero__tribe"><img src="../img/patterns/tribeleaf.png" alt="hero__tribe-img"
                             class="hero__tribeleaf"></div>
@@ -90,27 +92,71 @@
                             <li class="explain__item">
                                 <div class="explain-img__wrapper"><img src="../img/features/feat1.png" alt=""
                                         class="explain__img"></div>
-                                <h3 class="explain__title">Полезно</h3>
-                                <div class="explain__text">Натуральность - ключевое качествонашей продукции. Мы
-                                    используемтолько природные ингредиенты.</div>
+                                <div class="explain__wrapper">
+                                    <h3 class="explain__title">Полезно</h3>
+                                    <div class="explain__text">Натуральность - ключевое качествонашей продукции. Мы
+                                        используемтолько природные ингредиенты.</div>
+                                </div>
                             </li>
                             <li class="explain__item">
                                 <div class="explain-img__wrapper"><img src="../img/features/feat2.png" alt=""
                                         class="explain__img"></div>
-                                <h3 class="explain__title">Вкусно</h3>
-                                <div class="explain__text">Нежный,
-                                    ненавязчивый,
-                                    изысканный – так клиенты описывают вкусовые качества наших батончиков.</div>
+                                <div class="explain__wrapper">
+                                    <h3 class="explain__title">Вкусно</h3>
+                                    <div class="explain__text">Нежный,
+                                        ненавязчивый,
+                                        изысканный – так клиенты описывают вкусовые качества наших батончиков.</div>
+                                </div>
                             </li>
                             <li class="explain__item">
                                 <div class="explain-img__wrapper"><img src="../img/features/feat3.png" alt=""
                                         class="explain__img"></div>
-                                <h3 class="explain__title">Питательно</h3>
-                                <div class="explain__text">Высокое содержание качественного белка,
-                                    а также всех необходимых витаминов и минералов.</div>
+                                <div class="explain__wrapper">
+                                    <h3 class="explain__title">Питательно</h3>
+                                    <div class="explain__text">Высокое содержание качественного белка,
+                                        а также всех необходимых витаминов и минералов.</div>
+                                </div>
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="slider section">
+                <div class="container slider">
+                    <div class="product-img__container">
+                        <img src="../img/slider/product.png" alt="">
+                    </div>
+                    <div class="slider__content">
+                        <div class="composition__wrapper">
+                            <svg class="composition-icon">
+                                <use xlink:href="./img/sprite.svg#composition"></use>
+                            </svg>
+                        </div>
+                        <h2 class="slider__header">БАТОНЧИК “ГРАНОЛА ВИНОГРАД”</h2>
+                        <div class="slider__text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав
+                            также входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                        <div class="slider-char__wrapper">
+
+                            <div class="slider__char">Калорийность <span class="bold">110ккал</span></div>
+                            <div class="slider__char">Вес <span class="bold">95грам</span></div>
+                        </div>
+
+                        <ul class="composition__list">
+                            <li class="list__item">
+                                <div class="item__wrapper">
+                                    <svg class="item-icon">
+                                        <use xlink:href="./img/sprite.svg#drymilk"></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list__item">dfgdfgdfg</li>
+                            <li class="list__item">dfgdfgdfgdfgdfg</li>
+                            <li class="list__item">dfgdfgdfgd</li>
+                            <li class="list__item">dfgdfg</li>
+                            <li class="list__item">dfgdfgdfgdfg</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <div class="feedback section">
@@ -128,6 +174,7 @@
                                 alt="feebackavatarbig" class="card__image"></div>
                         <div class="card__content">
                             <h3 class="card__title">Лучший Перекус</h3>
+                            <h3 class="card__title__tab">Лучшие батончики премиум уровня</h3>
                             <div class="card__text">Я ем малыми порциями,
                                 но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером
                                 и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
