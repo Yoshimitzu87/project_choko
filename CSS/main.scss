@@ -52,6 +52,7 @@ ul {
 
 
 //blocks
+@import "_misc/overlay.scss";
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -61,3 +62,4 @@ ul {
 @import "_misc/title.scss";
 @import "_misc/form.scss";
 @import "blocks/slider.scss";
+@import "blocks/mapa.scss";

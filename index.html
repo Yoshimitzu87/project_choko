@@ -24,9 +24,12 @@
                         <div class="logo"><a href="index.html" class="logo__link"><img src="../img/logos/logo1.png"
                                     alt="chocco" class="logo__pic"></a></div>
                         <div class="hamburger__wrapper">
-                            <svg class="hamburger-icon">
-                                <use xlink:href="./img/sprite.svg#hamburger__menu"></use>
-                            </svg>
+
+                            <button id="openOverlay" class="overlayButton">
+                                <svg class="hamburger-icon">
+                                    <use xlink:href="./img/sprite.svg#hamburger__menu"></use>
+                                </svg>
+                            </button>
                         </div>
                         <div class="header__nav">
                             <nav class="nav">
@@ -44,6 +47,25 @@
                         </div><a href="tel:+78009039090" class="header__phone"><img src="img/phone.png" alt="phone"
                                 class="phone"></a>
                     </header>
+                    <div id="overlay" class="overlay">
+                        <ul class="nav__list__overlay">
+                            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Батончики</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a>
+                            </li>
+                            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        </ul>
+                        <div class="cross__wrapper">
+                            <button class="overlayClose" id="closeOverlay">
+                                <svg class="close__cross">
+                                    <use xlink:href="./img/sprite.svg#crossclose"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                     <div class="hero__completepicture"><img src="../img/patterns/comp.png" alt="hero__complete"
                             class="hero__complete"></div>
                     <div class="hero__tribe"><img src="../img/patterns/tribeleaf.png" alt="hero__tribe-img"
@@ -123,8 +145,19 @@
             </div>
             <div class="slider section">
                 <div class="container slider">
+                    <a href="#" class="arrow__left">
+                        <svg class="arrow__wrapper">
+                            <use xlink:href="./img/sprite.svg#leftarrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="arrow__right">
+                        <svg class="arrow__wrapper">
+                            <use xlink:href="./img/sprite.svg#rightarrow"></use>
+                        </svg>
+                    </a>
                     <div class="product-img__container">
-                        <img src="../img/slider/product.png" alt="">
+                        <div class="img__wrapper"><img src="../img/slider/product.png" alt="" class="product__img">
+                        </div>
                     </div>
                     <div class="slider__content">
                         <div class="composition__wrapper">
@@ -191,58 +224,13 @@
                             <div class="slider__char">Калорийность <span class="bold">110ккал</span></div>
                             <div class="slider__char">Вес <span class="bold">95грам</span></div>
                         </div>
+                        <div class="slider__price-wrapper">
+                            <div class="slider__price">140 ₽</div>
+                            <div class="slider__button-wrapper"><a href="#"
+                                    class="button__slider button--big">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
 
-                        <ul class="composition__list">
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#oats"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#seaweed"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#almond"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#drymilk"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#pumpkin"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#sugar"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li class="list__item">
-                                <div class="item__wrapper">
-                                    <svg class="item-icon">
-                                        <use xlink:href="./img/sprite.svg#cacao"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
@@ -358,11 +346,32 @@
                 </div>
                 </form>
         </div>
+        <div class="map section">
+            <div class="map__wrapper">
+                <img src="../img/map/map.png" alt="">
+            </div>
+        </div>
         </section>
+
     </div>
+
+
     </div>
     < !-- <div class="fixed__menu">
         </div>-->
 </body>
+
+<script>
+    const openOverlay = document.querySelector('#openOverlay');
+    openOverlay.addEventListener('click', function () {
+        overlay.style.visibility = 'visible';
+    })
+
+    const closeOverlay = document.querySelector('#closeOverlay');
+    closeOverlay.addEventListener('click', function () {
+        overlay.style.visibility = 'hidden';
+    })
+
+</script>
 
 </html>

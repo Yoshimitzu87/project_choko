@@ -6,9 +6,10 @@
     justify-content: space-between;
     // margin-bottom: rem(90px);
     max-width: rem(942px);
-    padding-top: rem(25px);
+
     max-height: rem(88px);
     z-index: 5;
+    padding-top: rem(10px);
 
     @include tablets {
         padding-left: rem(10px);
