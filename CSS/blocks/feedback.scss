@@ -92,6 +92,27 @@
     width: 100%;
     height: 100%;
     display: block;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.card__image__tab {
+    display: none;
+
+    @include tablets {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    @include phones {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
 }
 
 .card__content {
@@ -115,6 +136,17 @@
 }
 
 .card__title__tab {
+    display: none;
+
+    @include tablets {
+
+        display: flex;
+        align-self: center;
+
+    }
+}
+
+.card__text__tab {
     display: none;
 
     @include tablets {
@@ -151,7 +183,7 @@
     max-width: 463px;
 
     @include tablets {
-        max-width: 100%;
+        display: none;
     }
 
 }
@@ -192,6 +224,32 @@
     border-style: solid;
     border-radius: 50%;
     border-width: 5px;
+
+    @include tablets {
+        border-color: white;
+    }
+
+    @include phones {
+        border-color: white;
+    }
+}
+
+.avatar--active--tab {
+    border-color: $greenborder;
+
+    @include tablets {
+        border-color: $greenborder;
+        border-style: solid;
+        border-radius: 50%;
+        border-width: 5px;
+    }
+
+    @include phones {
+        border-color: $greenborder;
+        border-style: solid;
+        border-radius: 50%;
+        border-width: 5px;
+    }
 }
 
 .feedback-left-side__tribe {
