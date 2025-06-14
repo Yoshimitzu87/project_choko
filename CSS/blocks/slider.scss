@@ -15,12 +15,13 @@
 
     @include tablets {
         flex-direction: column;
-        max-width: 80%;
+        max-width: 95%;
         margin: 0 auto;
     }
 
     @include phones {
         flex-direction: column;
+        max-width: 95%;
     }
 }
 
@@ -31,7 +32,7 @@
     padding-left: rem(26px);
 
     @include tablets {
-        max-width: 90%;
+        max-width: 99%;
         max-height: 80%;
         display: flex;
         align-items: center;
@@ -39,7 +40,13 @@
 
     }
 
-    @include phones {}
+    @include phones {
+        max-width: 99%;
+        max-height: 80%;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px;
+    }
 
 }
 
@@ -98,21 +105,49 @@
 
     @include tablets {
         padding-top: 0px;
+        text-align: center;
+        align-self: center;
+    }
+
+    @include phones {
+        text-align: center;
+        align-self: center;
     }
 }
 
 .slider__text {
     padding-top: rem(23px);
     text-align: left;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: rem(16px);
+    line-height: rem(24px);
     max-width: 368px;
+    color: #666666;
+
+    @include tablets {
+        text-align: center;
+        align-self: center;
+    }
+
+    @include phones {
+        text-align: center;
+        align-self: center;
+    }
 }
 
 .slider-char__wrapper {
     display: flex;
     padding-top: 24px;
     gap: 0 25px;
+
+    @include tablets {
+        text-align: center;
+        align-self: center;
+    }
+
+    @include phones {
+        text-align: center;
+        align-self: center;
+    }
 
 }
 
@@ -134,7 +169,7 @@
     background-color: none;
     left: 100px;
     z-index: 2;
-    background-color: #60AACC;
+    background-color: rgba(255, 255, 255, 0.75);
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -162,6 +197,16 @@
     display: flex;
     padding-top: rem(24px);
     align-items: center;
+
+    @include tablets {
+        text-align: center;
+        align-self: center;
+    }
+
+    @include phones {
+        text-align: center;
+        align-self: center;
+    }
 }
 
 .slider__price {
@@ -205,5 +250,18 @@
     @include tablets {
         top: 35%;
         left: 96%;
+    }
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: row;
+
+    @include tablets {
+        flex-direction: column;
+    }
+
+    @include phones {
+        flex-direction: column;
     }
 }

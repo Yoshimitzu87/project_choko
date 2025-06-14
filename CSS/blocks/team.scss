@@ -1,0 +1,48 @@
+    .team{
+        max-height: rem(652px);
+    }
+
+    
+    .teamheader__wrapper{
+        align-self: center;
+        text-align: center;
+    }
+
+    .team__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .teamlist__item {
+        display: flex;
+        max-width: rem(220px);
+        max-height: rem(336px);
+        padding-right: rem(15px);
+        flex-wrap: wrap;
+    }
+
+    .teamlist__name{
+        font-weight: 700;
+        min-width: 90%;
+        display:    flex;
+        justify-content: center;
+    }
+
+    .teamlistcontent__wrpapper {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        max-width: rem(175px);
+        max-height: rem(25px);
+        margin: 0 auto;
+    }
+
+    .teamlistarrow__wrapper {
+        
+        display: flex;
+        max-width: 10px;
+        max-height: 10px;
+        align-self: center;
+        padding-left: 3px;
+    }
